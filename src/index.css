@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background: white;
+  border-bottom: 1px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #0095f6;
+}
+
+a.active {
+  color: #0095f6;
+}
+
+.post {
+  background: white;
+  max-width: 500px;
+  margin: 25px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.post-header {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+}
+
+.post-content {
+  padding: 15px;
+}
+
+button {
+  background: #0095f6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px;
+  }
+
+  .post {
+    width: 95%;
+    margin: 15px auto;
+  }
+
+  .post-content {
+    padding: 12px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
